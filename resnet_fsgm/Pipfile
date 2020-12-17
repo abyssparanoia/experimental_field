@@ -5,10 +5,15 @@ name = "pypi"
 
 [packages]
 numpy = "*"
+foolbox = "*"
+keras = "*"
+tensorflow = "*"
+pillow = "*"
+eagerpy = "*"
 
 [dev-packages]
 flake8 = "*"
 autopep8 = "*"
 
 [requires]
-python_version = "3.9"
+python_version = "3.8"
