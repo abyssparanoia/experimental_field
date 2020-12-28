@@ -1,6 +1,7 @@
 import sys
+import os
 if './vision_transformer' not in sys.path:
-    sys.path.append('./vision_transformer')
+    sys.path.append(os.path.abspath('./vision_transformer'))
 
 print(sys.path)
 
