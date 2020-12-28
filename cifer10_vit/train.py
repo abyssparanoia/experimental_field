@@ -10,13 +10,13 @@ import jax
 from matplotlib import pyplot as plt
 import numpy as np
 import tqdm
-from vision_transformer.vit_jax import checkpoint
-from vision_transformer.vit_jax import hyper
-from vision_transformer.vit_jax import input_pipeline
-from vision_transformer.vit_jax import logging
-from vision_transformer.vit_jax import models
-from vision_transformer.vit_jax import momentum_clip
-from vision_transformer.vit_jax import train
+from vit_jax import checkpoint
+from vit_jax import hyper
+from vit_jax import input_pipeline
+from vit_jax import logging
+from vit_jax import models
+from vit_jax import momentum_clip
+from vit_jax import train
 
 
 logger = logging.setup_logger('./logs')
