@@ -2,7 +2,6 @@ import sys
 import os
 if './vision_transformer' not in sys.path:
     sys.path.append(os.path.abspath('./vision_transformer'))
-    sys.path.append(os.path.abspath('./vision_transformer/vit_jax'))
 
 print(sys.path)
 
@@ -11,13 +10,13 @@ import jax
 from matplotlib import pyplot as plt
 import numpy as np
 import tqdm
-from vit_jax import checkpoint
-from vit_jax import hyper
-from vit_jax import input_pipeline
-from vit_jax import logging
-from vit_jax import models
-from vit_jax import momentum_clip
-from vit_jax import train
+from .vit_jax import checkpoint
+from .vit_jax import hyper
+from .vit_jax import input_pipeline
+from .vit_jax import logging
+from .vit_jax import models
+from .vit_jax import momentum_clip
+from .vit_jax import train
 
 
 logger = logging.setup_logger('./logs')
