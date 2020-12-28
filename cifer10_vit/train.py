@@ -1,20 +1,21 @@
+from vit_jax import train
+from vit_jax import momentum_clip
+from vit_jax import models
+from vit_jax import logging
+from vit_jax import input_pipeline
+from vit_jax import hyper
+from vit_jax import checkpoint
+import tqdm
+import numpy as np
+from matplotlib import pyplot as plt
+import jax
+import flax
 import sys
 if './vision_transformer' not in sys.path:
     sys.path.append('./vision_transformer')
 
-import flax
-import jax
-from matplotlib import pyplot as plt
-import numpy as np
-import tqdm
+print(sys.path)
 
-from vit_jax import checkpoint
-from vit_jax import hyper
-from vit_jax import input_pipeline
-from vit_jax import logging
-from vit_jax import models
-from vit_jax import momentum_clip
-from vit_jax import train
 
 logger = logging.setup_logger('./logs')
 
