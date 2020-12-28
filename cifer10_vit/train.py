@@ -1,9 +1,9 @@
+import sys
 if './vision_transformer' not in sys.path:
     sys.path.append('./vision_transformer')
 
 print(sys.path)
 
-import sys
 import flax
 import jax
 from matplotlib import pyplot as plt
