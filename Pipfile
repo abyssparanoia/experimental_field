@@ -4,14 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-numpy = "*"
-foolbox = "*"
-tensorflow = "2.1"
-pillow = "*"
-eagerpy = "*"
 
 [dev-packages]
-flake8 = "*"
-autopep8 = "*"
 
 [requires]
+python_version = "3.9"
